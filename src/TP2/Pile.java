@@ -1,21 +1,32 @@
 package TP2;
-import java.util.*;
 
-public class Pile {
+
+public abstract class Pile  {
     protected Liste UneListe;
+
     public Pile()
     {
         this.UneListe = new Liste();
     }
+  
     public void Empiler(Object Object_a_empiler)
     {   
-       
-        this.UneListe.Ajouter();
+
+       this.UneListe.Dernier(); // On positionne la liste sur la dernière position
+        this.UneListe.Ajouter(Object_a_empiler); // Puis on ajoute un objet
 
     }
     public Object Depiler()
     {
-        Object Object_a_depiler = new Object();
-        return Object_a_depiler;
+        this.UneListe.Dernier();//On se positionne sur la dernière position de la liste
+        Object intermediaire = this.UneListe.Objet_position();
+        this.UneListe.Supprimer();
+        return intermediaire;
+       
+        
     }
+    public void afficher()  
+    {
+        this.UneListe.Afficher();
+    }  
 }
