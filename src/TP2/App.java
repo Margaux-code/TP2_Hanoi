@@ -3,8 +3,8 @@ package TP2;
 import java.lang.Math;
 public class App {
     public static void main(String[] args) throws Exception {
-        PileEntiers P1 = new PileEntiers(),P2 = new PileEntiers(),P3 = new PileEntiers();
-        PileEntiers Sauvegarde = new  PileEntiers(); // Permet de garder la pile P1 vu qu'on va la dépiler
+        PileEntiers P1 = new PileEntiers("P1"),P2 = new PileEntiers("P2"),P3 = new PileEntiers("P3");
+        PileEntiers Sauvegarde = new  PileEntiers("Sauvegarde"); // Permet de garder la pile P1 vu qu'on va la dépiler
         System.out.println("Les nombres de P1 au depart sont : ");
         for (Integer i =0; i<5;i++) // On remplie la pile P1 avec 5 entiers aléatoires 
         {   

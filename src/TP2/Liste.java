@@ -56,6 +56,7 @@ public class Liste {
         for (int i =0 ;i<this.Liste.size();i++)
         {
             System.out.print(this.Liste.get(i)+ " ");        }
+            System.out.println();
 
     }
 }

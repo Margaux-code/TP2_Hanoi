@@ -2,9 +2,11 @@ package TP2;
 
 public class PileEntiers extends Pile {
 
+  private String m_nom;
 
-    public PileEntiers()
+    public PileEntiers(String nom)
     {
+      m_nom = nom;
       super.UneListe = new Liste();
     }
       public void Empiler(Integer Object_a_empiler)
@@ -25,6 +27,7 @@ public class PileEntiers extends Pile {
       }
       public void afficher()  
       {
+        System.out.print (m_nom + " : ");
           this.UneListe.Afficher();
       } 
 
