@@ -74,7 +74,7 @@ public class Hanoi {
         P2.afficher();
         P3.afficher();
         System.out.println("Les disques vont faire ces deplacements : ");
-        H.ToursHanoi(n,P1, P2, P3);
+        H.ToursHanoi(n,P1, P3, P2);
         System.out.println("Finalement : ");
         P1.afficher();
         P2.afficher();
