@@ -14,7 +14,7 @@ public class Hanoi {
             n = in.nextInt();
             if (n<=0)
             {
-                System.out.println("Erreur nombre negatif ou nul, rentrez un nombre positif");
+                System.out.println("Erreur nombre negatif ou nul, veuillez rentrer un nombre positif :");
             }
         }while(n <= 0);
        
@@ -40,17 +40,13 @@ public class Hanoi {
     public  void ToursHanoi (int n, PileEntiers P1, PileEntiers P2,PileEntiers P3)
     {
         try{
-          /*  if  (n == 1)
-            {
-                deplacement(n,P1,P3);
-     
-            }*/
+          
              if( n != 0)
              {
                  ToursHanoi(n-1, P1,P3,P2);
                  deplacement(n,P1,P2);
                  ToursHanoi(n-1, P3,P2,P1);
-                 //deplacement(n,P3,P2);
+                
              }
 
         }catch(Exception e)
@@ -79,10 +75,6 @@ public class Hanoi {
         P1.afficher();
         P2.afficher();
         P3.afficher();
-
-        
-        
-    
 
     }
   

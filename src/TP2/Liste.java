@@ -59,4 +59,12 @@ public class Liste {
             System.out.println();
 
     }
+public void afficher_inverse()
+{
+    for (int i =this.Liste.size() ;i>0;i--)
+    {
+        System.out.print(this.Liste.get(i-1)+ " ");        }
+        System.out.println();
+
+}
 }

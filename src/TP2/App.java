@@ -35,16 +35,18 @@ public class App {
         
 
     }
+    System.out.println();
+    System.out.println("Finalement les piles sont : ");
 
-System.out.print(" P1 : ");
-P1.afficher();
-System.out.println();
-System.out.print(" P2 : ");
+    System.out.println();
+P1.afficher_inverse();
+
+
 P2.afficher();
-System.out.println();
-System.out.print(" P3 : ");
+
+
 P3.afficher();
-System.out.println();
+
 
        
     }

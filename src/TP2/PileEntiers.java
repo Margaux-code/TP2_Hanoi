@@ -30,6 +30,12 @@ public class PileEntiers extends Pile {
         System.out.print (m_nom + " : ");
           this.UneListe.Afficher();
       } 
+      public void afficher_inverse()
+      {
+        System.out.print (m_nom + " : ");
+          this.UneListe.afficher_inverse();
+
+      }
 
     }
     
